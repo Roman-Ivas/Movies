@@ -8,7 +8,10 @@ import { Movies } from './Movies';
 export class HttpService {
 
   constructor(private http:HttpClient) { }
-  postUser(movies:Movies){
-    return this.http.post("http://www.omdbapi.com/",movies.Title);
+  postMovies(title:string){
+    console.log("Post Movies is worked")
+    console.log(this.http.post("https://www.omdbapi.com/","?apikey=4a848b0c"+title))
+    return this.http.post(`https://www.omdbapi.com/?apikey=4a848b0c&t=${title}`,title);
+    //movies.Title);
   }
 }
