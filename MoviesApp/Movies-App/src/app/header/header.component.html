@@ -1,0 +1,14 @@
+<header class="bg-dark text-white py-3">
+  <nav class="navbar justify-content-between">
+    <a class="navbar-brand text-white" routerLink="/">Home</a>
+    <!-- Replace the `routerLink` value with the actual path of your home page -->
+    <form class="form-inline" (submit)="onSubmit()">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search...">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="submit">Go</button>
+        </div>
+      </div>
+    </form>
+  </nav>
+</header>
