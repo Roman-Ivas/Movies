@@ -1,0 +1,31 @@
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loader-text {
+  font-size: 24px;
+  text-align: center;
+}
+/* .loader-text */
+p::after {
+  content: ".";
+  animation: dots 2s infinite;
+}
+@keyframes dots {
+  0%,
+  20% {
+      content: ".";
+  }
+  40% {
+      content: "..";
+  }
+  60% {
+      content: "...";
+  }
+  80%,
+  100% {
+      content: "";
+  }
+}
